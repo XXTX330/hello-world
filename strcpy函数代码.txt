@@ -13,3 +13,6 @@ char* StrCpy(char* src)
 	*(p + i)= '\0';
 	return p;
  }
+/**
+Remote edit B20031702 向舒悦
+**/
