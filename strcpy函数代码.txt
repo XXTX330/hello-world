@@ -1,0 +1,15 @@
+char* StrCpy(char* src)
+{
+	//计算src长度 
+	int len=0,i;
+	for(i=0;*(src + i) != '\0'; i++)
+	len++;
+	//申请len+1长度的内存空间 
+	char *p =(char*)malloc(sizeof(char)*(len+1));
+	//逐字符复制 
+	for(i=0;i<len; i++)
+	*(p+i)=*(src + i);
+	//字符串结束标记 
+	*(p + i)= '\0';
+	return p;
+ }
